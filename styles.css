@@ -1,153 +1,158 @@
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-
-  a {
-    text-decoration: none;
-}
-  
-  ol, ul {
-    list-style: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-
-
-  ion-icon {
-    font-size: 20px;
-  }
-
-  .header--container {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;
-  }
-
-  .header--contact {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .header--fone--mail {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-  }
-
-  .header--contact--phone {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 10px;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
-  .header--contact--phone a{
-    color: #fff;
-    margin-left: 5px;
-  } 
-  .header--contact--phone a:hover{
-    text-decoration: underline;
-  
-  } 
-
-  .contact--spacer {
-    margin: 0 10px;
-  }
-
-  .header--contact--email {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-left: 1px solid white;
-    
-    padding-left: 10px;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
-  .header--contact--email a {   
-    color: #fff;
-    margin-left: 5px;
-  }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
 
-  .header--contact--email a:hover {   
-    text-decoration: underline;
-  }
+ol,
+ul {
+	list-style: none;
+}
 
-  .header--socials {
-    height: 100%;
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
+img {
+	max-width: 100%;
+	height: auto;
+}
 
-  .header--socials ul{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+@keyframes down {
+	from {
+		transform: translateY(-200px);
+		opacity: 0;
+	}
 
-  .header--socials li {
-    height: 100%;
-    width: 40px;
-    padding-top: 10px;
-    padding-left: 10px;
-    color:#fff;
-    border-left: 1px solid white;
-  }
+	to {
+		transform: translateY(100px);
+		opacity: 1;
+	}
+}
 
-  .header--socials li:hover {
-    background-color: red;
-  }
+@keyframes up {
+	from {
+		transform: translateY(400px);
+		opacity: 0;
+	}
 
-  .header--quote {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: 1px solid white;
-    height: 100%;
-    color: #fff;
-    width: 170px;
-    background-color: red;
-  }
+	to {
+		transform: translateY(100px);
+		opacity: 1;
+	}
+}
 
-  .header--quote a {
-    color: #fff;
-    margin-left: 5px;
-  }
+/* //////////////////////////////////////////////////////////////// */
 
-  .header--quote a:hover {
-    text-decoration: underline;
-  }
+.bar {
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.infos {
+	display: flex;
+	margin-left: 1em;
+}
+
+.info {
+	margin-right: 1em;
+	display: flex;
+	align-items: center;
+}
+
+.info img {
+	margin-right: .4em;
+}
+
+.bar button {
+	background-color: red;
+	border: none;
+	color: white;
+	padding: 1em;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.bar button:hover {
+	background-color: brown;
+}
+
+.navbar {
+	display: flex;
+	margin: 1em;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	height: 80px;
+}
+
+.navbar ul {
+	display: flex;
+}
+
+.navbar li {
+	margin-left: 1em;
+}
+
+.navbar a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+.hero {
+	background-color: silver;
+	height: 800px;
+	background-image: url(img/banner.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero span {
+	position: relative;
+	display: block;
+	background-color: red;
+	outline: solid 2em rgba(255,255,255,0.2);
+	height: 500px;
+	width: 500px;
+	border-radius: 100%;
+	animation: 1.2s forwards ease-in-out down;
+	z-index: 0;
+	margin-left: 3em;
+}
+
+.hero span h1 {
+	color: white;
+	position: absolute;
+	bottom: 250px;
+	left: 100px;
+	width: 600px;
+	font-weight: bold;
+	font-size: 4em;
+	animation: .9s forwards ease-in up;
+	animation-delay: .3s;
+	opacity: 0;
+}
