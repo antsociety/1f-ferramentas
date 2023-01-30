@@ -61,6 +61,11 @@ img {
 
 /* //////////////////////////////////////////////////////////////// */
 
+.container {
+	max-width: 1024px;
+	margin: 10em auto;
+}
+
 .bar {
 	background-color: black;
 	color: white;
@@ -139,20 +144,142 @@ img {
 	height: 500px;
 	width: 500px;
 	border-radius: 100%;
-	animation: 1.2s forwards ease-in-out down;
-	z-index: 0;
+	animation: 1s forwards down;
 	margin-left: 3em;
 }
 
 .hero span h1 {
 	color: white;
 	position: absolute;
-	bottom: 250px;
+	bottom: 200px;
 	left: 100px;
 	width: 600px;
 	font-weight: bold;
 	font-size: 4em;
-	animation: .9s forwards ease-in up;
+	animation: .9s forwards up;
 	animation-delay: .3s;
 	opacity: 0;
+}
+
+main {
+	display: flex;
+}
+
+.intro {
+	margin: 1em;
+	position: relative;
+	flex: 2;
+	background-image: url(img/dots.png);
+	display: flex;
+	justify-content: flex-end;
+}
+
+.intro img {
+	height: 400px;
+}
+
+.intro span {
+	position: absolute;
+	bottom: -30px;
+	right: -30px;
+	height: 180px;
+	width: 180px;
+	background-color: silver;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+	border-bottom: solid 6px red;
+}
+
+.about {
+	flex: 3;
+	padding-left: 3em;
+}
+
+.subtitle {
+	font-weight: bold;
+	color: red;
+	font-size: 2em;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 3em;
+}
+
+.about p {
+	margin-top: 2em;
+}
+
+.services {
+	text-align: center;
+	background-image: url(img/bg-dot.png);
+}
+
+.cards {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 4em auto;
+	flex-wrap: wrap;
+}
+
+.card {
+	text-align: left;
+	height: 300px;
+	border: solid 1px silver;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 1em;
+	margin: 1em;
+	flex: 2;
+	min-width: 400px;
+}
+
+.card img {
+	height: 50px;
+}
+
+.testimonials {
+	background-image: url(img/testimonials.png);
+	background-size: cover;
+	color: white;
+	padding: 2em;
+	text-align: center;
+}
+
+.testimonials h1 {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.testimonials h2 {
+	font-weight: bold;
+	font-size: 3em;
+}
+
+.testimonials .card {
+	position: relative;
+	background-color: white;
+	color: black;
+	z-index: 3;
+	margin: 3em;
+}
+
+.testimonials .card img {
+	border-radius: 100%;
+	height: 100px;
+}
+
+.testimonials .card:before {
+	content: '';
+	position: absolute;
+	left: -20px;
+	height: 320px;
+	background-color: red;
+	width: 20px;
+	z-index: -1;
 }
