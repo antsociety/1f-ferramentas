@@ -453,6 +453,79 @@ main {
 	font-size: 1.2em;
 }
 
+.plus {
+	background-image: url(img/tools-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+.bg {
+	background-color: rgba(10, 20, 34, 0.9);
+}
+
+.plus-info {
+	display: flex;
+	align-items: center;
+}
+
+.plus-text {
+	flex: 1;
+}
+
+.plus-list {
+	flex: 1;
+	margin-left: 4em;
+}
+
+.plus-list span {
+	display: flex;
+	margin: 3em 1em;
+	font-size: 1.2em;
+	align-items: center;
+}
+
+.plus-list span img {
+	margin-right: 1em;
+	width: 30px;
+}
+
+@media only screen and (max-width: 1130px) {
+	.plus-info {
+		flex-direction: column;
+	}
+	.plus-text {
+		text-align: center;
+		padding: 2em;
+	}
+	.plus-list {
+		margin-left: 0;
+	}
+}
+
+.brands {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 6em;
+}
+
+.brand h1,
+.brand h2 {
+	text-align: center;
+}
+
+@media only screen and (max-width: 830px) {
+	.brands {
+		flex-direction: column;
+		margin: 3em;
+	}
+
+	.brands img {
+		margin: 1em;
+	}
+}
+
 .testimonials {
 	background-image: url(img/testimonials.png);
 	background-size: cover;
