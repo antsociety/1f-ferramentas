@@ -105,6 +105,8 @@ html {
 	max-width: 1024px;
 	margin: 10em auto;
 	position: relative;
+	padding-top: 5em;
+	margin-top: 0;
 }
 
 @media only screen and (max-width: 900px) {
@@ -200,6 +202,9 @@ nav {
 	animation: .9s forwards reveal;
 	opacity: 0;
 	animation-delay: 1.2s;
+	position: sticky;
+	top: 0;
+	z-index: 9;
 }
 
 nav ul {
