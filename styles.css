@@ -460,7 +460,7 @@ main {
 	color: white;
 }
 
-.bg {
+.plus > .bg {
 	background-color: rgba(10, 20, 34, 0.9);
 }
 
@@ -524,6 +524,52 @@ main {
 	.brands img {
 		margin: 1em;
 	}
+}
+
+.sell {
+	background-image: url(img/sell-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+.sell .title {
+	padding: 1em;
+}
+
+.sell .bg {
+	background-color: rgba(20, 20, 20, 0.9);
+}
+
+.sell button {
+	border: none;
+	background-color: maroon;
+	padding: 2em 2em;
+}
+
+.sell button a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.4em;
+}
+
+@media only screen and (max-width: 1130px) {
+	.sell button {
+		margin-bottom: 4em;
+		margin-top: 2em;
+	}
+
+	.plus-text,
+	.sell .title {
+		padding: 0;
+		padding-top: 1em;
+	}
+}
+
+.divider {
+	height: 4px;
+	width: 100%;
+	background-color: maroon;
 }
 
 .testimonials {
