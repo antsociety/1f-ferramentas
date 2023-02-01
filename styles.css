@@ -130,7 +130,6 @@ html {
 @media only screen and (max-width: 900px) {
 	.stack {
 		margin: 0 auto 2em;
-		padding-top: 2em;
 	}
 }
 
@@ -458,7 +457,8 @@ main {
 
 .about {
 	flex: 3;
-	padding-left: 3em;
+	padding: 6em 0 0 3em;
+	margin-bottom: -3em;
 }
 
 @media only screen and (max-width: 900px) {
@@ -497,7 +497,7 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0 auto;
+	margin: 6em auto -6em;
 	flex-wrap: wrap;
 }
 
@@ -554,6 +554,11 @@ main {
 	flex: 1;
 }
 
+.plus-text h1 {
+	font-size: 1.6em;
+	padding-bottom: 1em;
+}
+
 .plus-list {
 	flex: 1;
 	margin-left: 4em;
@@ -578,7 +583,7 @@ main {
 
 	.plus-text {
 		text-align: center;
-		padding: 2em;
+		padding: 6em 2em 2em;
 	}
 
 	.plus-list {
@@ -660,7 +665,7 @@ main {
 	background-image: url(img/testimonials.png);
 	background-size: cover;
 	color: white;
-	padding: 2em;
+	padding: 4em 2em 10em;
 	text-align: center;
 }
 
@@ -693,6 +698,10 @@ main {
 }
 
 @media only screen and (max-width: 900px) {
+	.testimonials {
+		padding: 1em 2em;
+	}
+
 	.testimonials .card {
 		margin: 4em auto;
 		height: 320px;
