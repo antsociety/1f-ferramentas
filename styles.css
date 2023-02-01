@@ -103,9 +103,8 @@ html {
 
 .container {
 	max-width: 1024px;
-	margin: 10em auto;
+	margin: 0 auto;
 	position: relative;
-	padding-top: 5em;
 	margin-top: 0;
 }
 
@@ -123,7 +122,20 @@ html {
 	margin: 4em auto;
 }
 
+.stack {
+	margin: 0 auto 6em;
+	padding-top: 6em;
+}
+
+@media only screen and (max-width: 900px) {
+	.stack {
+		margin: 0 auto 2em;
+		padding-top: 2em;
+	}
+}
+
 header {
+	position: relative;
 	background-color: black;
 	display: flex;
 	align-items: center;
@@ -131,6 +143,7 @@ header {
 	padding: 1em;
 	animation: .9s forwards reveal;
 	opacity: 0;
+	z-index: 2;
 }
 
 .header-logo {
@@ -266,7 +279,7 @@ nav button a {
 	animation-delay: .8s;
 	margin-top: -84px;
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -484,7 +497,7 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 4em auto;
+	margin: 0 auto;
 	flex-wrap: wrap;
 }
 
@@ -577,7 +590,7 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 6em;
+	margin: 3em;
 }
 
 .brand h1,
@@ -588,10 +601,10 @@ main {
 @media only screen and (max-width: 830px) {
 	.brands {
 		flex-direction: column;
-		margin: 3em;
 	}
 
 	.brands img {
+		flex-direction: column;
 		margin: 1em;
 	}
 }
@@ -640,6 +653,7 @@ main {
 	height: 4px;
 	width: 100%;
 	background-color: maroon;
+	margin-bottom: 6em;
 }
 
 .testimonials {
