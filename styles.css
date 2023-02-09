@@ -295,8 +295,10 @@ nav button a {
 
 .hero span {
 	position: relative;
-	display: block;
-	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
 	outline: solid 2em rgba(255,255,255,0.2);
 	height: 500px;
 	width: 500px;
@@ -304,6 +306,13 @@ nav button a {
 	animation: 1s forwards down;
 	animation-delay: 1.2s;
 	opacity: 0;
+}
+
+.hero img {
+	height: 250px;
+	opacity: 0;
+	animation: 1s forwards appear;
+	animation-delay: 2s;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -317,6 +326,9 @@ nav button a {
 	.hero span {
 		height: 280px;
 		width: 280px;
+	}
+	.hero img {
+		height: 160px;
 	}
 }
 
