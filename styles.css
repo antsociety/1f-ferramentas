@@ -814,11 +814,12 @@ main {
 
 .contact span {
 	font-weight: bold;
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 
 .contact p {
 	margin-top: .6em;
+	font-weight: bold;
 }
 
 .bottom {
